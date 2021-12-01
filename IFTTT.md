@@ -28,7 +28,7 @@ ifttt:
   key: cEpiZ2tc4e7i8Nkxxxxxxxx
   
 ```
-Una vez guardemos los cambios, nos desplazaremos hacia el apartado de automatizaciones, añadiremos un desencadenante, el cual en este caso es la detección del movimiento a través del Multisensor 6 como muestra la siguiente imagen:
+Guardados los cambios, nos desplazaremos hacia el apartado de automatizaciones, añadiremos un desencadenante, el cual en este caso es la detección del movimiento a través del Multisensor 6 como muestra la siguiente imagen:
 
 ![image](https://user-images.githubusercontent.com/95376526/144298171-9f060364-15c6-4a55-b6e4-6c0c4897da68.png)
 
