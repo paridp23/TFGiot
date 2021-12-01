@@ -23,11 +23,11 @@ Acto seguido, pasaremos a nuestro hub de HomeAssistant, e instalaremos el addon 
 
  
 Una vez instalado, pasaremos a editar nuestro documento “configuration.yaml” (en este caso, a través del addon “File editor”, pero se puede editar extrayendo la tarjeta SD de nuestra raspberry y editando el archivo desde nuestro ordenador). En este documento, añadiremos las siguientes dos líneas de código, pero con la API que se haya obtenido anteriormente.
-'''
+```
 ifttt:
   key: cEpiZ2tc4e7i8Nkxxxxxxxx
   
-'''
+```
 Una vez guardemos los cambios, nos desplazaremos hacia el apartado de automatizaciones, añadiremos un desencadenante, el cual en este caso es la detección del movimiento a través del Multisensor 6 como muestra la siguiente imagen:
 
 ![image](https://user-images.githubusercontent.com/95376526/144298171-9f060364-15c6-4a55-b6e4-6c0c4897da68.png)
@@ -37,13 +37,13 @@ Y como acciones a realizar, editaremos directamente en YAML:
 ![image](https://user-images.githubusercontent.com/95376526/144298179-1838324e-37af-4bf6-9bda-69434115e68b.png)
 
 Y añadiremos las siguientes líneas de código:
-'''
+```
 service: ifttt.trigger
 data_template:
   event: evento_movimiento
   value1: movimiento detectado
   
-'''
+```
 De esta manera, cuando nuestro sensor de movimiento detecte movimiento, lo guardará en nuestro google sheets, añadiendo una línea con un registro de hora, y las dos variables que hemos determinado en IFTTT, como se puede observar en la siguiente foto: 
 
 ![image](https://user-images.githubusercontent.com/95376526/144298215-dce06b0c-8a00-4c2e-9cf3-ada274db2f61.png)
@@ -54,10 +54,10 @@ En este caso el desencadenante será el dejar de detectar movimiento:
 ![image](https://user-images.githubusercontent.com/95376526/144298226-e1a9edc8-947b-4fe4-881f-63d2af7c9741.png)
  
 Y en la acción se dejará el siguiente código para distinguirlo de la detección de movimiento:
-'''
+```
 service: ifttt.trigger
 data_template:
   event: evento_movimiento
   value1: movimiento no detectado
 
-'''
+```
