@@ -25,4 +25,4 @@ El último paso será realizar el mapeado de puertos. Esta configuración cambia
 
 ![image](https://user-images.githubusercontent.com/95376526/144292408-c7780a34-ab57-4487-9097-5c72d1114c1e.png)
 
-Una vez estos pasos sean ejecutados, podemos acceder a HomeAssistant a través de la dirección de dominio que hemos creado anteriormente, tanto a través de un navegador web, como a través de la aplicación, donde en este caso se deberá de especificar dicha dirección de dominio. 
+Una vez estos pasos sean ejecutados, podemos acceder a HomeAssistant a través de la dirección de dominio que hemos creado anteriormente, tanto a través de un navegador web, como a través de la aplicación, donde en este caso se deberá de especificar la dirección que hemos creado una vez entremos dentro de la aplicación. 
