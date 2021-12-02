@@ -26,7 +26,6 @@ Una vez instalado, pasaremos a editar nuestro documento “configuration.yaml”
 ```
 ifttt:
   key: cEpiZ2tc4e7i8Nkxxxxxxxx
-  
 ```
 Guardados los cambios, nos desplazaremos hacia el apartado de automatizaciones, añadiremos un desencadenante, el cual en este caso es la detección del movimiento a través del Multisensor 6 como muestra la siguiente imagen:
 
@@ -42,7 +41,6 @@ service: ifttt.trigger
 data_template:
   event: evento_movimiento
   value1: movimiento detectado
-  
 ```
 De esta manera, cuando nuestro sensor de movimiento detecte movimiento, lo guardará en nuestro google sheets, añadiendo una línea con un registro de hora, y las dos variables que hemos determinado en IFTTT, como se puede observar en la siguiente foto: 
 
@@ -59,5 +57,23 @@ service: ifttt.trigger
 data_template:
   event: evento_movimiento
   value1: movimiento no detectado
+```
 
+De la misma forma que se ha creado una automatización con el sensor de movimiento, se ha creado dos automatizaciones diferentes para aprovechar que IFTTT da la posibilidad de crear 3 applets de forma gratiuita.
+La primera de estas automatizaciones adicionales es la detección del estado de una puerta, abierta o cerrada, mediante el sensor "Door/Window Sensor 7", y el funcionamiento del mismo se comporta de la misma manera que el sensor anterior.
+La segunda es un poco diferente, debido a que se utiliza como sensor un móvil con la aplicación de HomeAssistant instalada, y que como desencadenante, se usa la localización de mi dispositivo móvil dentro de un radio cercano de mi casa.
+Al crear esta nueva automatización, el tipo de desencadenante deberá de ser "Dispositivo", y el desencadenante será este dispositivo en la zona, como se muestra en la siguiente imagen:
+
+![image](https://user-images.githubusercontent.com/95376526/144475745-704c97cc-c484-48e2-acac-a7e71b2f9f09.png)
+
+Como acciones, se añadirán dos. La primera, encender nuestro switch, dando electricidad (podemos imaginar que se trata de un switch que controla la calefacción) como se muestra a continuación:
+
+![image](https://user-images.githubusercontent.com/95376526/144476041-d8c0267c-8060-48da-bc5b-1b0caedfd5bb.png)
+
+Y se añadirá también un YAML como evento de zona, donde se guardará un registro de que estamos llegando a casa en nuestro Google Sheets. 
+```
+service: ifttt.trigger
+data_template:
+  event: evento_zona
+  value1: llegando a casa
 ```
