@@ -44,7 +44,7 @@ data_template:
 ```
 De esta manera, cuando nuestro sensor de movimiento detecte movimiento, lo guardará en nuestro google sheets, añadiendo una línea con un registro de hora, y las dos variables que hemos determinado en IFTTT, como se puede observar en la siguiente foto: 
 
-![image](https://user-images.githubusercontent.com/95376526/144298215-dce06b0c-8a00-4c2e-9cf3-ada274db2f61.png)
+![image](https://user-images.githubusercontent.com/95376526/144477123-77b43dc2-141d-4757-89e9-7fb674a813a6.png)
 
 Para añadir una línea cuando deje de haber movimiento se aprovecha el mismo applet que hemos creado, pero se debe de crear una nueva automatización . 
 En este caso el desencadenante será el dejar de detectar movimiento:
@@ -77,3 +77,7 @@ data_template:
   event: evento_zona
   value1: llegando a casa
 ```
+
+De esta manera, si añadimos también una automazación contraria a entrar a la zona, en nuestro documento quedará un registro tal que así:
+
+![image](https://user-images.githubusercontent.com/95376526/144476946-5b37ae5d-adb0-41b3-a0b6-1c5f2bba73ef.png)
