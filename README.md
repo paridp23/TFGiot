@@ -6,4 +6,4 @@ Este repositorio tiene como uso facilitar la documentación del anexo de mi trab
 - [Configuración e integración de IFTTT](IFTTT.md)
 
 ## Esquema de HomeAssistant
-![image](https://user-images.githubusercontent.com/95376526/144662376-2512d14c-23e5-4e4b-a9b7-6e4765314983.png)
+![Untitled Diagram](https://user-images.githubusercontent.com/95376526/146971155-640ffc7b-df9e-4370-8321-fa92dfc0f7ca.jpg)
