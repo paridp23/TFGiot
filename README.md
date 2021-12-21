@@ -1,5 +1,6 @@
 # Hub de sensores y controladores IoT con analítica Cloud y control desde app móvil.
 Este repositorio tiene como uso facilitar la documentación del anexo de mi trabajo de final de grado.
+Tendrá como contenido las diferentes guías de instalación y configuración de las diferentes herramientas y servicios utilizados para el desarrollo del trabajo. 
 ## Índice
 
 - [Instalación y configuración de DuckDNS](DuckDNS.md)
