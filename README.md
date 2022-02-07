@@ -11,5 +11,3 @@ También se encuentran los datos de la tarjeta microSD la cual contiene el siste
 - [Configuración e integración de IFTTT](IFTTT.md)
 - [Configuración de Portal Azure](PortalAzure.md)
 
-## Esquema de HomeAssistant
-![Untitled Diagram](https://user-images.githubusercontent.com/95376526/146971155-640ffc7b-df9e-4370-8321-fa92dfc0f7ca.jpg)
