@@ -10,4 +10,4 @@ También se encuentran los datos de la tarjeta microSD la cual contiene el siste
 - [Instalación y configuración de DuckDNS](DuckDNS.md)
 - [Configuración e integración de IFTTT](IFTTT.md)
 - [Configuración de Portal Azure](PortalAzure.md)
-
+- [Memoria](MemoriaFinal.pdf)
